@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+            <meta charset="UTF-8">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Book Archive</title>
+            <!----------------------- css link------------------------- -->
+            <link rel="stylesheet" href="CSS/book.css">
+            <!-------------------- Bootstrap CSS CDN link---------------------->
+            <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+                        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We"
+                        crossorigin="anonymous">
+</head>
+
+<body class="bg-success bg-opacity-25  text-center">
+
+            <!------------------------------------------ Search Box Section ---------------------------------------->
+
+            <section class="search-section">
+
+
+                        <h1 class="mt-5 text-success">Bring me some Book</h1>
+
+                        <!----------------------------input field--------------------------->
+
+                        <input id="input-value" class="w-25 py-1 px-2 border-0 rounded-2 bg-light my-5"
+                                    placeholder="write book name here " type="text">
+
+
+                        <!---------------------------- button ----------------------------->
+                        <button onclick="searchText()"
+                                    class="rounded bg-success bg-opacity-75 border-0 py-1 px-2 my-3 text-white">
+                                    Let's Find
+                        </button>
+
+                        <!----------------------- result found idicator -------------------->
+
+                        <div>
+                                    <h5 id="result-found">
+
+                                                <!-- Number of result will show here dynamically with templete string -->
+                                    </h5>
+                        </div>
+
+            </section>
+
+            <!------------------------------- card section ------------------------------->
+
+            <section class="contrainer w-75 mx-auto mt-5">
+
+                        <div id="search-Container" class="row row-cols-1 row-cols-md-6 g-4">
+
+                                    <!-- Book Information will be shown here dynamically with templete string  -->
+
+                        </div>
+            </section>
+
+
+
+            <!------------------------------ Framwork Js CDN bundle link ----------------------------------->
+
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+                        integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+                        crossorigin="anonymous"></script>
+
+
+            <!---------------------------- Editable Javascript file link ----------------------------------->
+            <script src="js/book.js"></script>
+</body>
+
+</html>
